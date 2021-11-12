@@ -317,6 +317,8 @@
 <MODE NAME="jsp"		FILE="jsp.xml"
         FILE_NAME_GLOB="*.{jsp,jsf,jspf,tag}" />
 
+<MODE NAME="kaoscript" FILE="kaoscript.xml" FILE_NAME_GLOB="*.ks" />
+
 <MODE NAME="kotlin" FILE="kotlin.xml"
      FILE_NAME_GLOB="*.{kt,ks,kts,jetl}"/>
 
