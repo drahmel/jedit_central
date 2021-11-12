@@ -1,0 +1,82 @@
+jEdit 5.7 version history
+       (changes since jEdit 5.6.0)
+:encoding=UTF-8:
+
+{{{ Version 5.7pre1
+
+Thanks to Björn "Vampire" Kautler, Matthieu Casanova for contributing to this release.
+
+{{{ Bug Fixes
+
+- VFSManager.canReadFile() was returning true only for directories (#4102 - Matthieu Casanova)
+
+}}}
+{{{ Miscellaneous
+
+- Status bar design updated with the ability to add widgets to the left and the right of the bar (Matthieu Casanova)
+
+}}}
+{{{ API Changes
+
+- New service org.jedit.util.CleanerService replacing use of finalize() (Matthieu Casanova)
+
+- New methods JEditBuffer.getWordWrap() and JeditBuffer.setWordWrap() (Matthieu Casanova)
+
+- New method DialogChooser.openChooserWindow() showing a chooser dialog (Matthieu Casanova)
+
+- New method DialogChooser.openListChooserWindow() showing a chooser dialog list (Matthieu Casanova)
+
+- New method Buffer.setLineSeparator() (Matthieu Casanova)
+
+- New method Buffer.reloadWithEncoding() (Matthieu Casanova)
+
+- New method StatusBar.updateEvent() (Matthieu Casanova)
+
+- New method BufferSet.contains() (Matthieu Casanova)
+
+- Deprecated methods removed
+    StandardUtilities.objectsEqual()
+    TextArea.showPopupMenu()
+    Mode.acceptFilename()
+    OperatingSystem.isDOSDerived()
+    OperatingSystem.hasJava17()
+    MiscUtilities.getFileNameNoExtension()
+    GUIUtilities.prettifyMenuLabel()
+    GUIUtilities.setAutoMnemonic()
+    GUIUtilities.parseColor()
+    GUIUtilities.parseStyle()
+    GUIUtilities.adjustForScreenBounds()
+    GUIUtilities.requestFocus()
+    GUIUtilities.isPopupTrigger()
+    GUIUtilities.isMiddleButton()
+    GUIUtilities.isRightButton()
+    GUIUtilities.getScreenBounds()
+    GUIUtilities.showPopupMenu()
+    GUIUtilities.showPopupMenu()
+    GUIUtilities.isAncestorOf()
+    GUIUtilities.getParentDialog()
+    GUIUtilities.setEnabledRecursively()
+    GUIUtilities.setButtonContentMargin()
+    GUIUtilities.makeSameSize()
+    GUIUtilities.defaultTableCellSize()
+    GUIUtilities.defaultColumnWidth()
+    GUIUtilities.defaultRowHeight()
+    Buffer.getFile()
+    VFSManager.runInAWTThread()
+    VFSManager.runInWorkThread() (Matthieu Casanova)
+
+}}}
+{{{ Editing
+
+- New edit mode for Dockerfile (Matthieu Casanova)
+
+- Status bar encoding widget allow to choose between updating the encoding or reloading
+  with a new encoding (Matthieu Casanova)
+
+}}}
+
+}}}
+
+jEdit buffer local properties:
+:maxLineLen=80:wrap=hard:autoIndent=simple:noTabs=true:indentSize=2:tabSize=2:
+:folding=explicit:collapseFolds=2:
