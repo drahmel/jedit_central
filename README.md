@@ -3,7 +3,7 @@ Fork of jEdit program editor that includes builds, plugins, resources, etc.
 
 # Objective
 
-jEdit is a fantastic program editor that -- to this day -- is competitive with more modern editors such as VS Code, sublime, etc. Unfortunately, many engineers think jEdit is only for Java. Far from it! In fact, I rarely code in Java anymore, but I use jEdit daily for developing in Python, Solidity, Bash, Swift, React Native, PHP, Javascript, etc.
+jEdit is a fantastic program editor that -- to this day -- is competitive with more modern editors such as VS Code, sublime, etc. Unfortunately, many engineers think jEdit is only for Java. Far from it! In fact, I rarely code in Java anymore, but I use jEdit daily for developing in `Python`, `Solidity`, `Bash`, `Swift`, `React Native`, `PHP`, `Javascript`, etc.*
 
 Finding update-to-date resources is becoming more difficult (including new versions of plugins that aren't pushed to the repos) as other editors gain popularity. In this fork, I'll attempt to try and collect today many of modes, plugins, resources, and builds so people who want to use/modify/contribute to jEdit can do so easily. So please fork and add pull requests! We'll merge everything together.
 
@@ -13,27 +13,28 @@ Also, if you use jEdit, please donate at the main website [jEdit Home Page](http
 
 If you've stumbled across this repo and aren't already a jEdit user, here are a few places where jEdit excels and other editors can be bit clunky or difficult to use.
 
-# Multi-platform
+## Multi-platform
 
-I daily switch between MacOS, Windows, and Ubuntu Desktop. It's amazing to run exactly the same editor with the same features on every platform. When I've tried to switch editors in the past, I've always run into the problems of the editor not being unavailable or a plugin that doesn't work consistently across platforms. With jEdit, everything is there for you.
+I daily switch between *MacOS*, *Windows*, and *Ubuntu Desktop*. It's amazing to run exactly the same editor with the same features on every platform. When I've tried to switch editors in the past, I've always run the problems such as editor not being unavailable on Linux or a plugin that doesn't work consistently across platforms. With jEdit, everything is there for you.
 
 ## Multi-server editing
 
-I very often have to edit files across servers or on various remote servers. To provide some concrete examples, on a single day I might edit:
+I very often have to edit files across servers or on various remote servers. To provide some concrete examples, on a single day I might:
 
 * Edit a local Python .py file
 * Diff the same file on several DIFFERENT servers with color coded diff highlights
 * Edit a remote nginx config
 * Edit a remote Solidity file on the Ethereum server
 * Evaluate a JSON file for errors
-* Add a configuration to a router XML file
+* Add a configuration and then beautify a router XML file
+* Edit the JSX in a React component
 * Create a bash script for a cron job
 * Add entries to a /etc/hosts file
 * Remove whitespace and format an HTML static file
 * Edit a bash file on Raspberry Pi
-* Edit the JSX in a React component
+* Edit a local Info.plist in an iOS Swift project
 
-With jEdit's SFTP plugin, I can easily reach right into any server that I'm responsible for rich editing without copying my vimrc to a bunch of servers, install editor features, etc.
+With jEdit's SFTP plugin, I can easily reach right into any server that I'm responsible for, using the jEdit rich editing features without copying my vimrc to a bunch of servers, install editor features, etc.
 
 Although most modern editors have some remote SFTP capability, all the ones I've used have clunky JSON config files where you have to add/test/edit individual settings for each server and then cumbersomely maintain that config. With jEdit, you can just use a file browser like you're accessing local files and then bookmark/favorite any remote file or directory. Simple, painless.
 
@@ -51,9 +52,9 @@ Before jEdit, I would often have to:
 * Find the directory I needed
 * Figure out the sed regex I needed by running it over and over
 * Backing up the files I needed in case the I made a mistake and my sed match messed up the files
-* Ran a test piped into less to see where all the matches were
-* If a match looked wrong, quit less, edit/examine the file or regex
-* Repeat until right
+* Ran a test piped into `less` to see where all the matches were
+* If a match looked wrong, quit `less`, edit/examine the file or regex
+* Repeat until correct
 * Run the change
 
 Pretty tedious. With jEdit, I can:
@@ -73,7 +74,7 @@ The Find/Replace tool will do full regex matching and load the files showing the
 
 I'm including builds of plugins here in case the plugin download mirrors go offline. Use the Plugin Manager if possible, but if you can't find a build of a plugin that adds a feature or fixes a bug that is mentioned in the jedit-devel@lists.sourceforge.net, you can check here.
 
-To add a plugin, in most cases you can just copy it to your /jars folder and reboot jEdit.
+To add a plugin, in most cases you can just copy it to your `/jars` folder and reboot jEdit.
 
 
 # Resources
